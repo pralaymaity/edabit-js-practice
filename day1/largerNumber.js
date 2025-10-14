@@ -17,16 +17,13 @@ function f() {
 }
 
 function g() {
-  return 10;
+  return 210;
 }
 
 function largest(f1, f2) {
   if (f1 === f2) return "neither";
-  if (f1 > f2) {
-    return "f";
-  } else {
-    return "g";
-  }
+
+  return f1 > f2 ? "f" : "g";
 }
 
 console.log(largest(f(), g()));

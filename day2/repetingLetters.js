@@ -29,4 +29,3 @@ function repeatLetters(str) {
 console.log(repeatLetters(str));
 
 
-console.log("adsada");

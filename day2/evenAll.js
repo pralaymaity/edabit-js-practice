@@ -9,20 +9,18 @@ getOnlyEvens([0, 1, 2, 3, 4]) ➞ [0, 2, 4]
 
 getOnlyEvens([1, 2, 3, 4, 5]) ➞ []*/
 
-let arr = [0, 1, 2, 3, 4]
+let arr = [0, 1, 2, 3, 4];
 
-function evenNumbersIndex (arr){
+function evenNumbersIndex(arr) {
+  let result = [];
 
-    let result = []
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 == 0 && i % 2 == 0) {
+      result.push(arr[i]);
+    }
+  }
 
-    for(let i = 0; i < arr.length; i++){
-        if(arr[i] % 2 == 0 && i % 2 == 0){
-            result.push(arr[i])
-        }
-    } 
-
-    return result
-
+  return result;
 }
 
 console.log(evenNumbersIndex(arr));

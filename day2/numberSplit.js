@@ -14,16 +14,12 @@
 let num = -9;
 
 function splitNum(num) {
-  let result = [];
 
   let half = Math.floor(num / 2);
   let otherHalf = num - half
 
   return [half , otherHalf]
 
-
-
-  return result;
 }
 
 console.log(splitNum(num));

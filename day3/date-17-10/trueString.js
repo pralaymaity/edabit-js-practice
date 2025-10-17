@@ -18,12 +18,12 @@ function trueString(str) {
   //return splitStr
 
   for (let i = 0; i < splitStr.length - 1; i++) {
-    if (Number.parseInt(splitStr[i])  >= Number.parseInt(splitStr[i + 1])) {
+    if (Number.parseInt(splitStr[i]) >= Number.parseInt(splitStr[i + 1])) {
       return true;
     }
   }
 
-  return "false"
+  return "false";
 }
 
 console.log(trueString(str));

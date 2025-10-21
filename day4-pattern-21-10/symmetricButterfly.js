@@ -54,3 +54,6 @@ return str
 }
 
 console.log(halfDiamond(num));
+
+
+

@@ -29,4 +29,3 @@ function multiSome (num){
 }
 
 console.log(multiSome(10));
- 

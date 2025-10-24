@@ -17,6 +17,7 @@ function numberPattern(num) {
 
   for (let i = 0; i < num * 2 - 1; i++) {
     for (j = 0; j < num * 2 - 1; j++) {
+      
       let top = i;
       let left = j;
       let right = 2 * num - 2 - j;

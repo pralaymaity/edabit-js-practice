@@ -12,7 +12,7 @@ y - pattern
 
 */
 
-let num = 4;
+let num = 3;
 
 function pattern(num) {
   let str = "";
@@ -29,7 +29,7 @@ function pattern(num) {
   }
 
   for (let i = 0; i < num - 1; i++) {
-    str += " " + " " + " " + "*";
+    str += " " + " " + "*";
     str += "\n";
   }
 

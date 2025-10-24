@@ -11,7 +11,7 @@ l pattern
 */
 
 
-let num = 4 ;
+let num = 3 ;
 
 function pattern(num) {
   let str = "";

@@ -24,24 +24,6 @@ class List {
         this.head = newNode
     }
 
-    // insertAtLast(data){
-
-    //     let newNode = new Node(data)
-
-    //     if( this.head === null){
-    //         this.head = newNode
-    //         return
-    //     }
-
-    //     let currennt = this.head
-
-    //     while(currennt.pointer !== null){
-    //         currennt = currennt.pointer
-    //     }
-
-    //     currennt.pointer = newNode
-
-    // }
 
     showList (){
         let present = this.head

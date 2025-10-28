@@ -21,7 +21,7 @@ class DoublyLinkedList {
     } else {
 
       let last = this.head.prevPointer;
-
+ 
       newNode.nextPointer = this.head;
       newNode.prevPointer = last;
       last.nextPointer = newNode;

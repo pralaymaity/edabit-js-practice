@@ -54,7 +54,7 @@ class DoublyLinkedList {
     newNode.next = currentNode.next;
     currentNode.next = newNode;
     newNode.prev = currentNode;
-    newNode.next.prev = newNode
+    newNode.next.prev = newNode;
   }
 
   showData() {
@@ -64,6 +64,23 @@ class DoublyLinkedList {
     while (currentNode !== null) {
       str += currentNode.data + "<->";
       currentNode = currentNode.next;
+    }
+
+    return str + "null";
+  }
+
+  reverseData() {
+    let currentNode = this.head;
+
+    while (currentNode.next !== null) {
+      currentNode = currentNode.next;
+    }
+
+    let str = "";
+
+    while (currentNode !== null) {
+      str += currentNode.data + "<->"
+      currentNode = currentNode.prev;
     }
 
     return str + "null";
@@ -85,7 +102,8 @@ test.insertAtLast(40);
 test.insertAtLast(50);
 
 console.log(test.showData());
+console.log(test.reverseData());
 
-test.insertAtSpecificPosition(60,3)
+// test.insertAtSpecificPosition(60,3)
 
-console.log(test.showData());
+// console.log(test.showData());
